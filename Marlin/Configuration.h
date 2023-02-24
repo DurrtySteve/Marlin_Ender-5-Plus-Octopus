@@ -1365,7 +1365,7 @@
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
  */
-#define Z_MIN_PROBE_PIN // Pin 32 is the RAMPS default
+#define Z_MIN_PROBE_PIN PB7 // Pin 32 is the RAMPS default
 
 /**
  * Probe Type
@@ -3217,7 +3217,7 @@
 //
 // 480x320, 3.5", SPI Stock Display with Rotary Encoder from BIQU B1 SE Series
 //
-#define BTT_TFT35_SPI_V1_0
+//#define BTT_TFT35_SPI_V1_0
 
 //
 // Generic TFT with detailed options
