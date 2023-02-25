@@ -92,8 +92,8 @@
   #define MOTHERBOARD BOARD_BTT_OCTOPUS_V1_1
 #endif
 
-#define X_MAX_PIN  3 // Creality connects X_MAX to X_MIN(_PIN) motherboard connector
-#define Y_MAX_PIN 14 // Creality connects Y_MAX to Y_MIN(_PIN) motherboard connector
+//#define X_MAX_PIN  3 // Creality connects X_MAX to X_MIN(_PIN) motherboard connector
+//#define Y_MAX_PIN 14 // Creality connects Y_MAX to Y_MIN(_PIN) motherboard connector
 
 /**
  * Select the serial port on the board to use for communication with the host.
@@ -103,7 +103,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 0
+#define SERIAL_PORT -1
 
 /**
  * Serial Port Baud Rate
@@ -125,7 +125,7 @@
  * Currently Ethernet (-2) is only supported on Teensy 4.1 boards.
  * :[-2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT_2 -1
+//#define SERIAL_PORT_2 -1
 //#define BAUDRATE_2 250000   // :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000] Enable to override BAUDRATE
 
 /**
@@ -1202,7 +1202,7 @@
  * :[2,3,4,5,6,7]
  */
 // TODO rubienr: 100nF parallel to switch is too less -> find accurate capacity and disable ENDSTOP_NOISE_THRESHOLD
-#define ENDSTOP_NOISE_THRESHOLD 2
+//#define ENDSTOP_NOISE_THRESHOLD 2
 
 // Check for stuck or disconnected endstops during homing moves.
 //#define DETECT_BROKEN_ENDSTOP
